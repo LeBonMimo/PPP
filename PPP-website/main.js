@@ -39,6 +39,7 @@ tl.to(".section1", {
       trigger: ".ouf",
       start: "bottom center",
       toggleClass: "normal",
+      markers: true
     }
   })
 
