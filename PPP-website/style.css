@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: CoolVetica;
-  src: url(fonts/typoslab_irregular/TypoSlab\ _Irregular_Demo.otf);
+  src: url(./public/fonts/coolVetica/coolvetica\ rg.otf);
 }
 
 :root {
@@ -34,27 +34,27 @@
 /* UTILS */
 
 .fs-200{
-  font-size: var(--fs-200);
+  font-size: var(--fs-200)!important;
 }
 
 .fs-300{
-  font-size: var(--fs-300);
+  font-size: var(--fs-300)!important;
 }
 
 .fs-400{
-  font-size: var(--fs-400);
+  font-size: var(--fs-400)!important;
 }
 
 .fs-500{
-  font-size: var(--fs-500);
+  font-size: var(--fs-500)!important;
 }
 
 .fs-600{
-  font-size: var(--fs-600);
+  font-size: var(--fs-600)!important;
 }
 
 .fs-800{
-  font-size: var(--fs-800);
+  font-size: var(--fs-800)!important;
 }
 
 .fw-regular{
@@ -75,6 +75,10 @@
 
 .d-none{
   display: none!important;
+}
+
+.height-auto{
+  max-height: 450px!important;
 }
 
 .d-block{
@@ -99,6 +103,10 @@ h1 {
   font-size: var(--fs-800);
   line-height: 1.1;
   font-family: Slab, system-ui, Helvetica, Arial, sans-serif;
+  display: flex;
+  transition: all 05s;
+  justify-content: center;
+  align-items: end;
 }
 
 .hero, .section1{
@@ -111,13 +119,50 @@ h1 {
   position: fixed;
   top: 50%;
   right: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(50%, -30%);
+}
+
+.hero-text{
+  text-align: center;
+  font-size: var(--fs-300);
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 2s ease-in-out, opacity 1s ease-in;
+}
+
+.square{
+  position: fixed;
+  top: 20%;
+  left: 5%;
+}
+
+.triangle{
+  position: fixed;
+  top: 17%;
+  right: 5%;
+}
+
+.sawtooth{
+  position: fixed;
+  bottom: 20%;
+  left: 5%;
+}
+
+.sine{
+  position: fixed;
+  bottom: 20%;
+  right: 5%;
 }
 
 .scrollDown{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.scroll-text{
+  font-size: var(--fs-400);
+  transition: all 05s;
 }
 
 .chevron{
@@ -127,14 +172,14 @@ h1 {
   transform: scale3d(0.5, 0.5, 0.5);
   animation: move 3s ease-out infinite;
 }
-
+/* 
 .chevron:first-child {
   animation: move 3s ease-out 1s infinite;
 }
 
 .chevron:nth-child(2) {
   animation: move 3s ease-out 2s infinite;
-}
+} */
 
 .section1 .section1-content{
   position: fixed;
@@ -146,10 +191,6 @@ h1 {
 .ouf, .ouf2, .antoufle {
   font-size: 0;
   transition: 1s;
-}
-
-.normal{
-  font-size: var(--fs-800);
 }
 
 #app {

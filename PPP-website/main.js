@@ -29,7 +29,7 @@ tl.to(".section1", {
   scrollTrigger: {
   trigger: ".section1",
   start: "top center",
-  end: "center top",
+  end: "top top",
   toggleClass: "visible"
   }
 })
@@ -38,8 +38,7 @@ tl.to(".section1", {
   scrollTrigger: {
       trigger: ".ouf",
       start: "bottom center",
-      toggleClass: "normal",
-      markers: true
+      toggleClass: "fs-800",
     }
   })
 
@@ -48,7 +47,7 @@ tl.to(".section1", {
     scrollTrigger: {
       trigger: ".ouf2",
       start: "bottom center",
-      toggleClass: "normal"
+      toggleClass: "fs-800"
     }
   })
 
@@ -56,7 +55,22 @@ tl.to(".section1", {
     scrollTrigger: {
       trigger: ".antoufle",
       start: "bottom center",
-      toggleClass: "normal"
+      toggleClass: "fs-800"
+    }
+  })
+
+  .to(".antoufle", {
+    scrollTrigger: {
+      trigger: ".hero-text",
+      start: "top center",
+      toggleClass: "height-auto"
+    }
+  })
+  .to(".antoufle", {
+    scrollTrigger: {
+      trigger: ".hero-text",
+      start: "top center",
+      toggleClass: "visible"
     }
   })
 
