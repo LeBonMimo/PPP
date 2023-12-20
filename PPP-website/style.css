@@ -109,6 +109,31 @@ h1 {
   align-items: end;
 }
 
+h2{
+  font-size: var(--fs-600);
+  margin-bottom: 0;
+}
+
+h3{
+  font-size: var(--fs-400);
+}
+
+a{
+  color: white;
+  font-size: var(--fs-300);
+  text-underline-offset: 5px;
+  text-decoration-thickness: from-font;
+}
+
+ul{
+  list-style: url(./public/images/ArrowLi.svg);
+  padding-left: 5rem;
+}
+
+ul li{
+  padding-left: 1rem;
+}
+
 .hero, .section1{
   height: 100vh;
   transition: all 0.5s;
@@ -186,6 +211,27 @@ h1 {
   top: 50%;
   right: 50%;
   transform: translate(50%, -50%);
+}
+
+.section1-content{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.section1-right{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.img27ans1{
+  z-index: 1;
+  transform: translate(-5rem,-4rem);
+}
+.imgAutreCanal{
+  z-index: 2;
+  transform: translate(-2rem,-8rem);
 }
 
 .ouf, .ouf2, .antoufle {
