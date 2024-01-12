@@ -75,9 +75,14 @@ tl.to(".section1", {
   })
 
 
-  
-
-  
+tl.to(".section2", {
+  scrollTrigger: {
+  trigger: ".section2",
+  start: "top center",
+  end: "top top",
+  toggleClass: "visible"
+  }
+})
 
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
