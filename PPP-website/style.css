@@ -152,15 +152,29 @@
   animation: titleFadeIn calc(var(--title-duration) + .3s) ease-in-out;
 }
 
+.animation-duration-1 span{
+  animation-duration: calc(var(--title-duration) + .9s);
+}
+
+.animation-duration-2 span{
+  animation-duration: calc(var(--title-duration) + 1.5s);
+}
+
 html, body{
-  height: 100vh;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 p{
   margin: 0;
-  padding: 0;
+  padding-bottom: 1rem;
   font-size: calc(1500vw/1018);
   text-decoration: none;
   font-weight: 200;
@@ -170,6 +184,16 @@ p{
 a{
   color: inherit;
   text-decoration-line: none;
+}
+
+ul{
+  padding-inline: 0;
+}
+
+ul li{
+  list-style: none;
+  font-size: calc(1500vw/1018);
+  color: var(--color-white);
 }
 
 body{
@@ -214,18 +238,21 @@ body{
 .card1{
   background-image: var(--img2-url);
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
 .card2{
   background-image: var(--img1-url);
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
 .card3{
   background-image: var(--img3-url);
   background-size: cover;
+  background-position: center;
   height: 100%;
 }
 
@@ -342,7 +369,8 @@ body{
 
 .container-center{
   margin: auto;
-  max-width: 600px;
+  padding: 2rem;
+  max-width: 650px;
 }
 
 /* CAPTATIONS */
@@ -355,4 +383,39 @@ body{
 
 .bg-contact{
   background-color: var(--color-bg-contact);
+}
+
+.social-media-wrapper{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-media-wrapper a{
+  text-decoration: none !important;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid var(--color-white);
+
+  /* effect */
+  transition: border-radius 0.2s linear 0s;
+  transform: rotate(45deg);
+}
+
+.social-media-wrapper a:hover{
+  border-radius: 0;
+}
+
+.social-media-wrapper a svg{
+  fill: var(--color-white);
+  transition: transform 0.01s linear 0s;
+  transform: rotate(-45deg);
 }
