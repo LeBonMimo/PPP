@@ -215,6 +215,7 @@ p{
   text-decoration: none;
   font-weight: 200;
   color: var(--color-white);
+  text-align: justify;
 }
 
 a{
@@ -404,7 +405,7 @@ body{
   display: block;
   position: relative;
   width: 100%;
-  margin-block: 10px;
+  line-height: 2.5rem;
 }
 
 .text-reveal span::after{
@@ -470,6 +471,11 @@ body{
 .text-reveal span:nth-child(6)::before,
 .text-reveal span:nth-child(6)::after{
     animation-delay: 1.6s;
+}
+
+.text-reveal span:nth-child(7)::before,
+.text-reveal span:nth-child(7)::after{
+    animation-delay: 1.9s;
 }
 
 /* CAPTATIONS */
