@@ -2,18 +2,18 @@
 
 @font-face {
   font-family: Slab;
-  src: url(fonts/typoslab_irregular/TypoSlab\ _Irregular_Demo.otf);
+  src: url(../fonts/typoslab_irregular/TypoSlab\ _Irregular_Demo.otf);
 }
 
 @font-face {
   font-family: CoolVetica;
-  src: url(c/fonts/coolVetica/coolvetica\ rg.otf);
+  src: url(../fonts/coolVetica/coolvetica\ rg.otf);
 }
 
 @font-face {
   font-family: Kanit;
-  src: url(/fonts/kanit/kanit-bold.woff), url(/fonts/kanit/kanit-bold.woff2)
-  , url(/fonts/kanit/kanit-semibold.woff), url(/fonts/kanit/kanit-semibold.woff2);
+  src: url(../fonts/kanit/kanit-bold.woff), url(../fonts/kanit/kanit-bold.woff2)
+  , url(../fonts/kanit/kanit-semibold.woff), url(../fonts/kanit/kanit-semibold.woff2);
 }
 
 :root {
@@ -34,9 +34,9 @@
 
   --title-duration: .7s;
 
-  --img1-url: url("images/1.jpeg");
-  --img2-url: url("images/2.jpeg");
-  --img3-url: url("images/3.jpg");
+  --img1-url: url("../images/1.jpeg");
+  --img2-url: url("../images/2.jpeg");
+  --img3-url: url("../images/3.jpg");
 
 
   line-height: 1.5;
