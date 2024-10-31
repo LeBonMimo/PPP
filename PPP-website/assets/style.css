@@ -239,7 +239,6 @@ body{
   color: var(--text-color-neutral);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .tinmar-le-thug{
