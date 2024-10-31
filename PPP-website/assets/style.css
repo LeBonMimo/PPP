@@ -37,6 +37,7 @@
   --img1-url: url("../images/1.jpeg");
   --img2-url: url("../images/2.jpeg");
   --img3-url: url("../images/3.jpg");
+  --imgTinmar-url: url("../images/tinmar.jpg");
 
 
   line-height: 1.5;
@@ -238,6 +239,20 @@ body{
   color: var(--text-color-neutral);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+
+.tinmar-le-thug{
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250px, -250px) scale(0);
+  transition: .5s;
+  z-index: 1000;
 }
 
 .hero{
@@ -254,6 +269,14 @@ body{
 
 .hero h1 span{
   display: inline-block;
+}
+
+body:has(#triggerTinmarThug:hover) .tinmar-le-thug{
+  transform: translate(-250px, -250px) scale(1);
+}
+
+body:has(#triggerTinmar:hover) .card2{
+  background-image: var(--imgTinmar-url);
 }
 
 .outline{
