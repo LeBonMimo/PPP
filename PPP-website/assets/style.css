@@ -500,12 +500,62 @@ body:has(#triggerTinmar:hover) .card2{
     animation-delay: 1.9s;
 }
 
+.style-span{
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.press-container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.press-article{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
 /* CAPTATIONS */
+
+.album-cover-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.album-cover {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+
+.album-cover img{
+  width: clamp(200px, 50vw, 400px);
+  height: auto;
+}
+.album-cover::before,
+.album-cover::after{
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+/* shadow */
+.album-cover::before {
+  inset: 0.75rem;
+  background: black;
+  transform: translateZ(-50px);
+  filter: blur(15px);
+  opacity: 0.5;
+}
 
 .bg-captation{
   background-color: var(--color-bg-capta);
 }
-
 /* CONTACT */
 
 .bg-contact{
